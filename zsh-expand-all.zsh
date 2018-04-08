@@ -11,6 +11,7 @@ expand-all-enter() {
   zle accept-line
 }
 zle -N expand-all-enter
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(expand-all-enter)
 
 # space expands all aliases, including global
 bindkey -M emacs " " expand-all
