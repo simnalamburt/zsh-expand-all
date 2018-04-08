@@ -1,13 +1,22 @@
-globalias() {
-   zle _expand_alias
-   zle expand-word
-   zle self-insert
+expand-all() {
+  zle _expand_alias
+  zle expand-word
+  zle self-insert
 }
-zle -N globalias
+zle -N expand-all
+
+expand-all-enter() {
+  zle _expand_alias
+  zle expand-word
+  zle accept-line
+}
+zle -N expand-all-enter
 
 # space expands all aliases, including global
-bindkey -M emacs " " globalias
-bindkey -M viins " " globalias
+bindkey -M emacs " " expand-all
+bindkey -M viins " " expand-all
+bindkey -M emacs "^M" expand-all-enter
+bindkey -M viins "^M" expand-all-enter
 
 # control-space to make a normal space
 bindkey -M emacs "^ " magic-space
