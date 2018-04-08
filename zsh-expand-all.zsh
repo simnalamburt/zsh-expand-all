@@ -8,6 +8,7 @@ zle -N expand-all
 expand-all-enter() {
   zle _expand_alias
   zle expand-word
+  zle magic-space
   zle accept-line
 }
 zle -N expand-all-enter
