@@ -62,6 +62,20 @@ $ sudo systemctl
 
 <br>
 
+Disabling certain features with `$ZSH_EXPAND_ALL_DISABLE`
+--------
+You can disable certain features with `$ZSH_EXPAND_ALL_DISABLE` environment
+variable.
+
+```zsh
+ZSH_EXPAND_ALL_DISABLE=             # All features are enabled
+ZSH_EXPAND_ALL_DISABLE=alias        # Disable alias expanding
+ZSH_EXPAND_ALL_DISABLE=word         # Disable word expanding
+ZSH_EXPAND_ALL_DISABLE=alias,word   # Disable alias and word expanding
+```
+
+<br>
+
 References
 --------
 This project was forked from [globalias] of Oh My Zsh.
