@@ -3,10 +3,10 @@ zsh-expand-all
 This plugin let your zsh automatically expands all glob expressions,
 subcommands, normal aliases, and [global aliases].
 
-Try it with [zplug], or your favorite plugin manager.
+Try it with [zplugin], or your favorite plugin manager.
 
 ```zsh
-zplug "simnalamburt/zsh-expand-all"
+zplugin light simnalamburt/zsh-expand-all
 ```
 
 Then just use your zsh as usual. Your aliases will be automatically expanded.
@@ -98,7 +98,7 @@ This project was forked from [globalias] of Oh My Zsh.
 license] and the [Apache License (Version 2.0)]. See [COPYRIGHT] for details.
 
 [global aliases]: http://www.zshwiki.org/home/examples/aliasglobal
-[zplug]: https://github.com/zplug/zplug
+[zplugin]: https://github.com/zdharma/zplugin
 [globalias]: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/globalias
 [MIT license]: LICENSE-MIT
 [Apache License (Version 2.0)]: LICENSE-APACHE
